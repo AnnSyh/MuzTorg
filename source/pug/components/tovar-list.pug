@@ -1,0 +1,51 @@
+-
+  var tovars =[
+    {
+      img:{
+        name: 'tovarr-1',
+        width: '64',
+        height: '200'
+      },
+      icon:{
+        name:'question-circle-solid',
+        width:'10',
+        height: '10'
+      },
+      section: 'Электрогитары',
+      title: 'FENDER SQUIER MM STRATOCASTER HARD TAIL BLACK',
+      inStock: 'В наличи',
+      price: '12 400',
+      oldPrice: '13 600',
+      discount: '-10%',
+      bonus:'до 620 бонусов',
+      installmentText:'в рассрочку',
+      installmentPlan:'517 руб./мес',
+      button:'В корзину'
+    },
+
+  ]
+
+  // https://www.muztorg.ru/catalog/muzikalnye-instrumenty-v-arendu
+
+section.tovars
+  .tovars__wrap
+    ul.tovars__list
+      each tovar in tovars
+        li.tovars__item
+          +img(tovar.img.name, tovar.img.width, tovar.img.height)
+          .tovar__info
+            a.tovar__section(href='#')=tovar.section
+            a.tovar__title(href='#')=tovar.title
+            .tovar__inStock=tovar.inStock
+             +svg(tovar.icon.name, tovar.icon.width, tovar.icon.height)
+            .tovar__price=tovar.price
+            .tovar__oldPrice=tovar.oldPrice
+              .tovar__discount=tovar.discount
+            .tovar__bonus=tovar.bonus
+              a(href='#')
+                +svg(tovar.icon.name, tovar.icon.width, tovar.icon.height)
+            .tovar__installment=tovar.installmentText
+              div=tovar.installmentPlan
+            button=tovar.button
+
+

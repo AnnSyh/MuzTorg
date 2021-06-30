@@ -1,0 +1,59 @@
+@mixin retina {
+
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+    @content;
+  }
+}
+
+// Desktop first
+
+@mixin viewport--lg {
+  @media (max-width: $viewport--xl - 1) {
+    @content;
+  }
+}
+
+@mixin viewport--md {
+  @media (max-width: $viewport--lg - 1) {
+    @content;
+  }
+}
+
+@mixin viewport--sm {
+  @media (max-width: $viewport--md - 1) {
+    @content;
+  }
+}
+
+// Центрирование контента
+
+@mixin container {
+  width: 100%;
+  max-width: $content--xl;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include viewport--sm {
+    max-width: none;
+    padding: 0;
+  }
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin button-reset {
+  padding: 0;
+  border: none;
+  font-family: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}

@@ -1,0 +1,128 @@
+.tovars {
+  margin-bottom: 30px;
+
+  &__wrap {
+    @include container;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    @media (max-width:$viewport--md - 1) {
+      grid-template-columns: 1fr;
+      row-gap: 20px;
+    }
+  }
+
+  &__item {
+    position: relative;
+    z-index: 1;
+    padding: 20px 25px 10px 50px;
+    color: $color-paynes-grey;
+
+    svg {
+      min-height: 10px;
+      margin-bottom: 15px;
+      fill: $color-burnt-orange;
+    }
+
+    button {
+      margin-top: 15px;
+    }
+
+
+    @media (max-width:$viewport--lg - 1) {
+      padding: 22px;
+
+      &::after {
+        content: none;
+      }
+    }
+
+    @media (max-width:$viewport--md - 1) {
+      display: flex;
+      padding: 0;
+
+      &::before {
+        content: none;
+      }
+
+      svg {
+        flex-shrink: 0;
+        width: 40px;
+        height: 40px;
+        min-height: auto;
+        margin-bottom: 0;
+        margin-right: 16px;
+      }
+
+      p {
+        font-size: 12px;
+        line-height: 22px;
+      }
+
+      strong {
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+  }
+
+  @media (max-width:$viewport--md - 1) {
+    margin-bottom: 30px;
+    padding: 0 15px;
+  }
+}
+
+.tovar {
+  &__section {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #767676;
+    text-decoration: none;
+    margin-bottom: 5px;
+  }
+  &__title {
+    color: #3f3f3f;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1;
+    white-space: inherit;
+    height: 65px;
+    overflow: hidden;
+    text-transform: uppercase;
+    display: inline-block;
+  }
+
+
+  &__price {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  &__bonus {
+    color: #767676;
+    font-size: 12px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+    a {
+      color: #767676;
+    }
+  }
+
+  &__inStock,
+  &__installment {
+    color: #090;
+  }
+
+
+
+}

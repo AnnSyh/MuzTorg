@@ -1,0 +1,17 @@
+include ../components/head
+include ../components/header
+include ../components/mixins
+block variables
+
+doctype html
+html(lang="ru")
+  +head(title)
+
+  body.page
+    +header(isHeaderSearchResult)
+    main.page__content
+      block content
+    include ../components/footer
+
+    script(src="js/vendor.min.js")
+    script(src="js/main.min.js")
