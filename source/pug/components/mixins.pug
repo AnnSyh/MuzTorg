@@ -7,6 +7,7 @@ mixin picture(image, format, width, height, altText, classData)
   //
     #{comment}
   picture
-    source(type='image/webp', srcset= 'img/webp/' + image + '@1x.webp 1x, img/webp/' + image + '@2x.webp 2x')
-    source(type=`image/${format}` srcset=`img/content/${image}@1x.${format} 1x, img/content/${image}@2x.${format} 2x`)
-    img(src=`img/content/${image}@1x.${format}`, width=width, height=height, alt=altText data-caption=classData)
+    img(src=`img/content/${image}.${format}`, width=width, height=height, alt=altText data-caption=classData)
+
+
+

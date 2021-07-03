@@ -1,0 +1,35 @@
+.btn {
+
+  &-yellow,
+  &-orange {
+    background-color: #ea431b;
+    border: none;
+    height: 33px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 142px;
+    width: 100%;
+
+    span {
+      line-height: 1;
+    }
+
+    svg {
+      width: 19px;
+      margin-right: 5px;
+    }
+  }
+
+  &-orange {
+    color: #fff;
+    background-color: #ea431b;
+  }
+  &-yellow {
+    background-color: #ffffff;
+    //color:#3f3f3f;
+    border: 1px solid #fcea34;
+  }
+
+}

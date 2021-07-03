@@ -13,11 +13,17 @@
 
 // Components
 //---------------------------------
+@import "components/header";
+@import "components/footer";
 
 
 // Blocks
 //---------------------------------
 @import "blocks/tovars.scss";
+@import "blocks/tovars.scss";
+@import "blocks/buttons.scss";
+@import "blocks/badge.scss";
+@import "blocks/icons.scss";
 
 
 // ! use it to disable hover, focus on touch

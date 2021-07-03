@@ -1,0 +1,51 @@
+
+
+.badge {
+  border-radius: 3px;
+  font: 600 11px/1 Roboto;
+  text-transform: uppercase;
+  min-width: 34px;
+  /* height: 20px; */
+  /* line-height: 20px; */
+  border: 1px solid currentColor;
+  margin: 0 3px 3px 0;
+  padding: 3px 5px;
+  text-align: center;
+
+
+  @media (max-width:$viewport--400){
+    margin-bottom: 3px;
+  }
+
+  &__black {
+    color: #3f3f3f;
+    border-color: #3f3f3f;
+  }
+
+  &__bgLightGreen {
+    color: #ffffff;
+    border-color: #93c11d;
+    background-color: #93c11d;
+  }
+
+  &__brRed {
+    color: #ea431b;
+    border-color: #ea431b;
+  }
+
+  &__brGreen {
+    color: #090;
+    border-color: #090;
+  }
+
+  &__brYellow,
+  &__arenda {
+    color: #3f3f3f;
+    border-color: #fcea34;
+    text-align: center;
+  }
+
+  svg {
+    margin: 0;
+  }
+}

@@ -1,5 +1,4 @@
 @mixin retina {
-
   @media (min-resolution: $retina-dpi),
   (min-resolution: $retina-dppx) {
     @content;
@@ -57,3 +56,26 @@
   cursor: pointer;
   outline: none;
 }
+
+
+@mixin placeholder {
+  &::-webkit-input-placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &:-ms-input-placeholder { @content; }
+}
+@mixin blue_gradient_bg {
+  border-color: #013FFF !important;
+  background: linear-gradient( 45deg, #0273FF 0%, #013FFF 100%) !important;
+}
+@mixin gray_gradient_bg {
+  background: linear-gradient(123.75deg, #FAFAFA -30.52%, #D7DBE0 89.61%) !important;
+}
+
+
+// form
+$placeholder_color: #B1B3BA;
+
+// datepicker
+//$calendar_data_active_color: #E5E5E5;
+$calendar_data_active_color: #013FFF;

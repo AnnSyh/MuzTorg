@@ -1,10 +1,13 @@
-<!DOCTYPE html>
+
+<header class="header">
+  <p class="header__text">Шапка</p>
+</header><!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Название сайта</title>
+    <title></title>
     <meta name="description" content="Mobistore24 – оптовые и розничные продажи мобильных телефонов, планшетных компьютеров, ноутбуков и другой цифровой техники в Санкт-Петербурге."/>
     <meta name="format-detection" content="telephone=no"/>
     <link rel="preload" href="fonts/gilroy/Gilroy-Regular.woff2" as="font" crossorigin="anonymous"/>
@@ -19,36 +22,159 @@
     <link rel="stylesheet" href="css/style.min.css"/>
   </head>
   <body class="page">
-    <header class="header">
-      <p class="header__text">Шапка со специальным классом</p>
-    </header>
     <main class="page__content">
-      <!--h1=title-->
-      <section class="tovars">
-        <div class="tovars__wrap">
+      <section class="tovar">
+        <div class="tovar__wrap">
           <ul class="tovars__list">
             <li class="tovars__item">
-              <svg width="10" height="10">
-                <use xlink:href="img/sprite.svg#question-circle-solid"></use>
-              </svg>
+              <div class="tovars__picture">
+                <!--1х: undefinedpx; 2x: NaNpx
+                -->
+                <picture><img src="img/content/tovar-1.jpg"/></picture>
+                <div class="badge-list">
+                  <div class="badge badge__brRed">хит</div>
+                  <div class="badge badge__brGreen">0-0-24</div>
+                  <div class="badge badge__brYellow">+ В аренду</div>
+                </div><a class="heart-icon" href="#"></a>
+                <div class="tovar__weight">
+                  <div class="mr-10">вес:</div>
+                  <div class="badge-list">
+                    <div class="badge badge__brRed">10010789</div>
+                    <div class="badge badge__brGreen">0</div>
+                    <div class="badge badge__black">0</div>
+                  </div>
+                </div>
+              </div>
               <div class="tovar__info"><a class="tovar__section" href="#">Электрогитары</a><a class="tovar__title" href="#">FENDER SQUIER MM STRATOCASTER HARD TAIL BLACK</a>
                 <div class="tovar__inStock">В наличи
                   <svg width="10" height="10">
                     <use xlink:href="img/sprite.svg#question-circle-solid"></use>
                   </svg>
                 </div>
-                <div class="tovar__price">12 400</div>
-                <div class="tovar__oldPrice">13 600
-                  <div class="tovar__discount">-10%</div>
+                <div class="tovar__price">12 400
+                  <div class="tovar__old-discount">
+                    <div class="tovar__oldPrice">13 600</div>
+                    <div class="tovar__discount">-10%</div>
+                  </div>
                 </div>
                 <div class="tovar__bonus">до 620 бонусов<a href="#">
                     <svg width="10" height="10">
                       <use xlink:href="img/sprite.svg#question-circle-solid"></use>
                     </svg></a></div>
-                <div class="tovar__installment">в рассрочку
-                  <div>517 руб./мес</div>
+                <div class="tovar__buttons">
+                  <div class="tovar__installment">в рассрочку
+                    <div>517 руб./мес</div>
+                  </div>
+                  <div class="col2">
+                    <button class="btn-orange">
+                      <svg width="19" height="16">
+                        <use xlink:href="img/sprite.svg#icon_cart_w"></use>
+                      </svg><span>В корзину</span>
+                    </button>
+                    <button class="btn-yellow"><span>Оформить в аренду</span></button>
+                  </div>
                 </div>
-                <button>В корзину</button>
+              </div>
+            </li>
+            <li class="tovars__item">
+              <div class="tovars__picture">
+                <!--1х: undefinedpx; 2x: NaNpx
+                -->
+                <picture><img src="img/content/tovar-2.jpg"/></picture>
+                <div class="badge-list">
+                  <div class="badge badge__bgLightGreen">Цена снижена!</div>
+                  <div class="badge badge__brRed">хит</div>
+                  <div class="badge badge__brGreen">0-0-12</div>
+                  <div class="badge badge__brYellow">+ В аренду</div>
+                </div><a class="heart-icon" href="#"></a>
+                <div class="tovar__weight">
+                  <div class="mr-10">вес:</div>
+                  <div class="badge-list">
+                    <div class="badge badge__brRed">10010789</div>
+                    <div class="badge badge__brGreen">0</div>
+                    <div class="badge badge__black">0</div>
+                  </div>
+                </div>
+              </div>
+              <div class="tovar__info"><a class="tovar__section" href="#">Электрогитары</a><a class="tovar__title" href="#">FENDER SQUIER MM STRATOCASTER HARD TAIL BLACK</a>
+                <div class="tovar__inStock">В наличи
+                  <svg width="10" height="10">
+                    <use xlink:href="img/sprite.svg#question-circle-solid"></use>
+                  </svg>
+                </div>
+                <div class="tovar__price">12 400
+                  <div class="tovar__old-discount">
+                    <div class="tovar__oldPrice">13 600</div>
+                    <div class="tovar__discount">-10%</div>
+                  </div>
+                </div>
+                <div class="tovar__bonus">до 620 бонусов<a href="#">
+                    <svg width="10" height="10">
+                      <use xlink:href="img/sprite.svg#question-circle-solid"></use>
+                    </svg></a></div>
+                <div class="tovar__buttons">
+                  <div class="tovar__installment">в рассрочку
+                    <div>517 руб./мес</div>
+                  </div>
+                  <div class="col2">
+                    <button class="btn-orange">
+                      <svg width="19" height="16">
+                        <use xlink:href="img/sprite.svg#icon_cart_w"></use>
+                      </svg><span>В корзину</span>
+                    </button>
+                    <button class="btn-yellow"><span>Оформить в аренду</span></button>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="tovars__item">
+              <div class="tovars__picture">
+                <!--1х: undefinedpx; 2x: NaNpx
+                -->
+                <picture><img src="img/content/tovar-3.jpg"/></picture>
+                <div class="badge-list">
+                  <div class="badge badge__brRed">хит</div>
+                  <div class="badge badge__brGreen">0-0-24</div>
+                  <div class="badge badge__brYellow">+ В аренду</div>
+                </div><a class="heart-icon" href="#"></a>
+                <div class="tovar__weight">
+                  <div class="mr-10">вес:</div>
+                  <div class="badge-list">
+                    <div class="badge badge__brRed">10010789</div>
+                    <div class="badge badge__brGreen">0</div>
+                    <div class="badge badge__black">0</div>
+                  </div>
+                </div>
+              </div>
+              <div class="tovar__info"><a class="tovar__section" href="#">Электрогитары</a><a class="tovar__title" href="#">FENDER SQUIER MM STRATOCASTER HARD TAIL BLACK</a>
+                <div class="tovar__inStock">В наличи
+                  <svg width="10" height="10">
+                    <use xlink:href="img/sprite.svg#question-circle-solid"></use>
+                  </svg>
+                </div>
+                <div class="tovar__price">12 400
+                  <div class="tovar__old-discount">
+                    <div class="tovar__oldPrice">13 600</div>
+                    <div class="tovar__discount">-10%</div>
+                  </div>
+                </div>
+                <div class="tovar__bonus">до 620 бонусов<a href="#">
+                    <svg width="10" height="10">
+                      <use xlink:href="img/sprite.svg#question-circle-solid"></use>
+                    </svg></a></div>
+                <div class="tovar__buttons">
+                  <div class="tovar__installment">в рассрочку
+                    <div>517 руб./мес</div>
+                  </div>
+                  <div class="col2">
+                    <button class="btn-orange">
+                      <svg width="19" height="16">
+                        <use xlink:href="img/sprite.svg#icon_cart_w"></use>
+                      </svg><span>В корзину</span>
+                    </button>
+                    <button class="btn-yellow"><span>Оформить в аренду</span></button>
+                  </div>
+                </div>
               </div>
             </li>
           </ul>

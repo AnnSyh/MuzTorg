@@ -1,0 +1,118 @@
+-
+  var tovars = [
+    {
+      img: {
+        name: 'tovar-1',
+      },
+      section: 'Электрогитары',
+      title: 'FENDER SQUIER MM STRATOCASTER HARD TAIL BLACK',
+      inStock: 'В наличи',
+      price: '12 400',
+      oldPrice: '13 600',
+      discount: '-10%',
+      bonus: 'до 620 бонусов',
+      installmentText: 'в рассрочку',
+      installmentPlan: '517 руб./мес',
+      button: 'В корзину',
+      buttonRent: 'Оформить в аренду',
+      badgeHit:'хит',
+      badgeInstal:'0-0-24',
+      badgeArenda:'+ В аренду',
+      weight:'10010789',
+      weight1:'0',
+      weight2:'0',
+    },
+    {
+      img: {
+        name: 'tovar-2',
+      },
+      section: 'Электрогитары',
+      title: 'FENDER SQUIER MM STRATOCASTER HARD TAIL BLACK',
+      inStock: 'В наличи',
+      price: '12 400',
+      oldPrice: '13 600',
+      discount: '-10%',
+      bonus: 'до 620 бонусов',
+      installmentText: 'в рассрочку',
+      installmentPlan: '517 руб./мес',
+      badgeLightGreen:'Цена снижена!',
+      button: 'В корзину',
+      buttonRent: 'Оформить в аренду',
+      badgeHit: 'хит',
+      badgeInstal: '0-0-12',
+      badgeArenda:'+ В аренду',
+      weight: '10010789',
+      weight1: '0',
+      weight2: '0',
+    },
+    {
+      img: {
+        name: 'tovar-3',
+      },
+      section: 'Электрогитары',
+      title: 'FENDER SQUIER MM STRATOCASTER HARD TAIL BLACK',
+      inStock: 'В наличи',
+      price: '12 400',
+      oldPrice: '13 600',
+      discount: '-10%',
+      bonus: 'до 620 бонусов',
+      installmentText: 'в рассрочку',
+      installmentPlan: '517 руб./мес',
+      button: 'В корзину',
+      buttonRent: 'Оформить в аренду',
+      badgeHit: 'хит',
+      badgeInstal:'0-0-24',
+      badgeArenda:'+ В аренду',
+      weight: '10010789',
+      weight1: '0',
+      weight2: '0',
+    },
+  ]
+
+section.tovar
+  .tovar__wrap
+    ul.tovars__list
+      each tovar in tovars
+        li.tovars__item
+          div.tovars__picture
+            +picture(tovar.img.name, 'jpg', tovar.img.width, tovar.img.height)
+            .badge-list
+              if tovar.badgeLightGreen
+                .badge.badge__bgLightGreen=tovar.badgeLightGreen
+              else
+              if tovar.badgeHit
+                .badge.badge__brRed=tovar.badgeHit
+              else
+              .badge.badge__brGreen=tovar.badgeInstal
+              .badge.badge__brYellow=tovar.badgeArenda
+
+            a.heart-icon(href='#')
+
+            div.tovar__weight
+              div.mr-10 вес:
+              .badge-list
+                .badge.badge__brRed=tovar.weight
+                .badge.badge__brGreen=tovar.weight1
+                .badge.badge__black=tovar.weight2
+
+          .tovar__info
+            a.tovar__section(href='#')=tovar.section
+            a.tovar__title(href='#')=tovar.title
+            .tovar__inStock=tovar.inStock
+              +svg('question-circle-solid', 10, 10)
+            .tovar__price=tovar.price
+             .tovar__old-discount
+              .tovar__oldPrice=tovar.oldPrice
+              .tovar__discount=tovar.discount
+            .tovar__bonus=tovar.bonus
+              a(href='#')
+                +svg('question-circle-solid', 10, 10)
+            .tovar__buttons
+              .tovar__installment=tovar.installmentText
+                div=tovar.installmentPlan
+              .col2
+                button.btn-orange
+                  +svg('icon_cart_w', 19, 16)
+                  span=tovar.button
+                button.btn-yellow
+                  span=tovar.buttonRent
