@@ -1,5 +1,6 @@
 .btn {
 
+  &-blue,
   &-yellow,
   &-orange {
     background-color: #ea431b;
@@ -11,6 +12,7 @@
     justify-content: center;
     min-width: 142px;
     width: 100%;
+    cursor: pointer;
 
     span {
       line-height: 1;
@@ -28,8 +30,11 @@
   }
   &-yellow {
     background-color: #ffffff;
-    //color:#3f3f3f;
     border: 1px solid #fcea34;
+  }
+  &-blue {
+    background-color: #1e509a;
+    color: #ffffff;
   }
 
 }

@@ -433,10 +433,12 @@ img {
           flex-wrap: wrap; }
       @media (max-width: 400px) {
         .tovars__item .badge-list {
-          -webkit-box-orient: vertical;
+          -webkit-box-orient: horizontal;
           -webkit-box-direction: normal;
-              -ms-flex-direction: column;
-                  flex-direction: column; } }
+              -ms-flex-direction: row;
+                  flex-direction: row;
+          width: auto;
+          margin-right: 45px; } }
     .tovars__item .heart {
       position: absolute;
       top: 15px;
@@ -461,6 +463,9 @@ img {
           -webkit-box-flex: 1;
               -ms-flex: 1;
                   flex: 1; } }
+      @media (max-width: 400px) {
+        .tovars__item picture {
+          padding: 61px 0; } }
     .tovars__item .tovar__info {
       margin-top: 30px; }
       .tovars__item .tovar__info .badge-list {
@@ -731,10 +736,12 @@ img {
           flex-wrap: wrap; }
       @media (max-width: 400px) {
         .tovars__item .badge-list {
-          -webkit-box-orient: vertical;
+          -webkit-box-orient: horizontal;
           -webkit-box-direction: normal;
-              -ms-flex-direction: column;
-                  flex-direction: column; } }
+              -ms-flex-direction: row;
+                  flex-direction: row;
+          width: auto;
+          margin-right: 45px; } }
     .tovars__item .heart {
       position: absolute;
       top: 15px;
@@ -759,6 +766,9 @@ img {
           -webkit-box-flex: 1;
               -ms-flex: 1;
                   flex: 1; } }
+      @media (max-width: 400px) {
+        .tovars__item picture {
+          padding: 61px 0; } }
     .tovars__item .tovar__info {
       margin-top: 30px; }
       .tovars__item .tovar__info .badge-list {
@@ -946,7 +956,7 @@ img {
   .tovar__installment {
     display: block; }
 
-.btn-yellow, .btn-orange {
+.btn-blue, .btn-yellow, .btn-orange {
   background-color: #ea431b;
   border: none;
   height: 33px;
@@ -961,10 +971,11 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   min-width: 142px;
-  width: 100%; }
-  .btn-yellow span, .btn-orange span {
+  width: 100%;
+  cursor: pointer; }
+  .btn-blue span, .btn-yellow span, .btn-orange span {
     line-height: 1; }
-  .btn-yellow svg, .btn-orange svg {
+  .btn-blue svg, .btn-yellow svg, .btn-orange svg {
     width: 19px;
     margin-right: 5px; }
 
@@ -975,6 +986,10 @@ img {
 .btn-yellow {
   background-color: #ffffff;
   border: 1px solid #fcea34; }
+
+.btn-blue {
+  background-color: #1e509a;
+  color: #ffffff; }
 
 .badge {
   border-radius: 3px;
@@ -1024,16 +1039,16 @@ a.heart-icon {
     content: '';
     width: 27px;
     height: 26px;
-    background-image: url("../../img/sprite/heart.svg");
+    background-image: url("../img/sprite/heart.svg");
     background-position: center center;
     background-repeat: no-repeat;
     position: absolute;
     top: 0px;
     left: 0px; }
-  a.heart-icon.active, a.heart-icon:hover {
+  a.heart-icon.heart-active {
     cursor: pointer; }
-    a.heart-icon.active:after, a.heart-icon:hover:after {
-      background-image: url("../../img/sprite/heart-active.svg"); }
+    a.heart-icon.heart-active:after {
+      background-image: url("../img/sprite/heart-active.svg"); }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,

@@ -14,19 +14,18 @@ a.heart-icon {
     content: '';
     width: 27px;
     height: 26px;
-    background-image: url("../../img/sprite/heart.svg");
+    background-image: url("../img/sprite/heart.svg");
     background-position: center center;
     background-repeat: no-repeat;
     position: absolute;
     top: 0px;
     left: 0px;
   }
-  &.active,
-  &:hover {
+  &.heart-active {
     cursor: pointer;
 
     &:after {
-      background-image: url("../../img/sprite/heart-active.svg");
+      background-image: url("../img/sprite/heart-active.svg");
     }
   }
 

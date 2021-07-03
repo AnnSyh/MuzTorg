@@ -69,7 +69,9 @@
       flex-wrap: wrap;
 
       @media (max-width:$viewport--400){
-        flex-direction: column;
+        flex-direction: row;
+        width: auto;
+        margin-right: 45px;
       }
     }
     .heart {
@@ -90,6 +92,10 @@
         aspect-ratio: auto;
         min-height: auto;
         flex: 1;
+      }
+
+      @media (max-width:$viewport--400){
+        padding: 61px 0;
       }
     }
 

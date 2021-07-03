@@ -69,6 +69,11 @@
     },
   ]
 
+.modal(id='modal')
+  p Thanks for clicking. That felt good.
+  a(href='#' rel="modal:close") Close
+
+
 section.tovar
   .tovar__wrap
     ul.tovars__list
@@ -113,6 +118,7 @@ section.tovar
               .col2
                 button.btn-orange
                   +svg('icon_cart_w', 19, 16)
-                  span=tovar.button
+                  span В корзину
                 button.btn-yellow
                   span=tovar.buttonRent
+  a(href='#modal' rel='modal:open') Open Modal
