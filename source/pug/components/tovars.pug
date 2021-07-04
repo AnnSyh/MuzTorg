@@ -69,10 +69,13 @@
     },
   ]
 
-.modal(id='modal')
-  p Thanks for clicking. That felt good.
-  a(href='#' rel="modal:close") Close
-
+.modal(id='sticky')
+  h3 Кэшбэк 5%
+  p 5% от каждой фактически внесенной по чеку суммы вам вернутся в виде Бонусов на Клубную карту.
+  p
+    a(href='#') Оформить Клубную карту
+  p
+    a(href='#') Правила программы лояльности
 
 section.tovar
   .tovar__wrap
@@ -94,7 +97,7 @@ section.tovar
             a.heart-icon(href='#')
 
             div.tovar__weight
-              div.mr-10 вес:
+              div вес:
               .badge-list
                 .badge.badge__brRed=tovar.weight
                 .badge.badge__brGreen=tovar.weight1
@@ -110,7 +113,7 @@ section.tovar
               .tovar__oldPrice=tovar.oldPrice
               .tovar__discount=tovar.discount
             .tovar__bonus=tovar.bonus
-              a(href='#')
+              a(href='#sticky' rel='modal:open')
                 +svg('question-circle-solid', 10, 10)
             .tovar__buttons
               .tovar__installment=tovar.installmentText
@@ -121,4 +124,3 @@ section.tovar
                   span В корзину
                 button.btn-yellow
                   span=tovar.buttonRent
-  a(href='#modal' rel='modal:open') Open Modal

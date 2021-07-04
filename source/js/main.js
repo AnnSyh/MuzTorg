@@ -1,5 +1,4 @@
 import moduleTest from './modules/module-test';
-import jquery from 'jquery/dist/jquery.min';
 
 moduleTest();
 
@@ -7,6 +6,9 @@ window.addEventListener('load',function () {
 
   let hearts = document.querySelectorAll('.heart-icon');
   let btnOrange = document.querySelectorAll('.btn-orange');
+  let tovarBonus = document.querySelectorAll('.tovar__bonus');
+
+  console.log('tovarBonus = ',tovarBonus)
 
   for(let i = 0; i < hearts.length; i++){
     hearts[i].addEventListener('click',setHeartColor);
@@ -33,18 +35,13 @@ window.addEventListener('load',function () {
       this.classList.add('btn-blue')
       var span = this.querySelector('span');
       span.innerHTML = 'В корзине'
-
-      $(".btn-orange").dialog();
-
     } else {
       this.classList.remove('btn-blue')
       this.classList.add('btn-orange')
       var span = this.querySelector('span');
       span.innerHTML = 'В корзину'
     }
-    // window.open('https://javascript.info');
   }
-
 
 });
 

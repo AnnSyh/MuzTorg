@@ -21,7 +21,7 @@ task(`clean`, function () {
 
 task(`copy`, function () {
   return src([
-      `source/fonts/**/*.{woff,woff2}`,
+      `source/fonts/**/*.{woff,woff2,ttf}`,
       `source/video/**`,
       `source/favicon/**`,
     ], {

@@ -8,14 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title></title>
-    <meta name="description" content="Mobistore24 – оптовые и розничные продажи мобильных телефонов, планшетных компьютеров, ноутбуков и другой цифровой техники в Санкт-Петербурге."/>
+    <meta name="description" content="Аренда гитар, пианино, синтезаторов, микрофонов, звукового и светового оборудования в Музторге. Оформление в аренду за 2 минуты."/>
     <meta name="format-detection" content="telephone=no"/>
-    <link rel="preload" href="fonts/gilroy/Gilroy-Regular.woff2" as="font" crossorigin="anonymous"/>
-    <link rel="preload" href="fonts/gilroy/Gilroy-SemiBold.woff2" as="font" crossorigin="anonymous"/>
-    <link rel="preload" href="fonts/gilroy/Gilroy-ExtraBold.woff2" as="font" crossorigin="anonymous"/>
-    <link rel="preload" href="fonts/rubik/rubik-v9-latin_cyrillic-regular.woff2" as="font" crossorigin="anonymous"/>
-    <link rel="preload" href="fonts/rubik/rubik-v9-latin_cyrillic-500.woff2" as="font" crossorigin="anonymous"/>
-    <link rel="preload" href="fonts/open-sans/open-sans-v17-latin_cyrillic-regular.woff2" as="font" crossorigin="anonymous"/>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
@@ -23,8 +17,11 @@
   </head>
   <body class="page">
     <main class="page__content">
-      <div class="modal" id="modal">
-        <p>Thanks for clicking. That felt good.</p><a href="#" rel="modal:close">Close</a>
+      <div class="modal" id="sticky">
+        <h3>Кэшбэк 5%</h3>
+        <p>5% от каждой фактически внесенной по чеку суммы вам вернутся в виде Бонусов на Клубную карту.</p>
+        <p><a href="#">Оформить Клубную карту</a></p>
+        <p><a href="#">Правила программы лояльности</a></p>
       </div>
       <section class="tovar">
         <div class="tovar__wrap">
@@ -40,7 +37,7 @@
                   <div class="badge badge__brYellow">+ В аренду</div>
                 </div><a class="heart-icon" href="#"></a>
                 <div class="tovar__weight">
-                  <div class="mr-10">вес:</div>
+                  <div>вес:</div>
                   <div class="badge-list">
                     <div class="badge badge__brRed">10010789</div>
                     <div class="badge badge__brGreen">0</div>
@@ -60,7 +57,7 @@
                     <div class="tovar__discount">-10%</div>
                   </div>
                 </div>
-                <div class="tovar__bonus">до 620 бонусов<a href="#">
+                <div class="tovar__bonus">до 620 бонусов<a href="#sticky" rel="modal:open">
                     <svg width="10" height="10">
                       <use xlink:href="img/sprite.svg#question-circle-solid"></use>
                     </svg></a></div>
@@ -91,7 +88,7 @@
                   <div class="badge badge__brYellow">+ В аренду</div>
                 </div><a class="heart-icon" href="#"></a>
                 <div class="tovar__weight">
-                  <div class="mr-10">вес:</div>
+                  <div>вес:</div>
                   <div class="badge-list">
                     <div class="badge badge__brRed">10010789</div>
                     <div class="badge badge__brGreen">0</div>
@@ -111,7 +108,7 @@
                     <div class="tovar__discount">-10%</div>
                   </div>
                 </div>
-                <div class="tovar__bonus">до 620 бонусов<a href="#">
+                <div class="tovar__bonus">до 620 бонусов<a href="#sticky" rel="modal:open">
                     <svg width="10" height="10">
                       <use xlink:href="img/sprite.svg#question-circle-solid"></use>
                     </svg></a></div>
@@ -141,7 +138,7 @@
                   <div class="badge badge__brYellow">+ В аренду</div>
                 </div><a class="heart-icon" href="#"></a>
                 <div class="tovar__weight">
-                  <div class="mr-10">вес:</div>
+                  <div>вес:</div>
                   <div class="badge-list">
                     <div class="badge badge__brRed">10010789</div>
                     <div class="badge badge__brGreen">0</div>
@@ -161,7 +158,7 @@
                     <div class="tovar__discount">-10%</div>
                   </div>
                 </div>
-                <div class="tovar__bonus">до 620 бонусов<a href="#">
+                <div class="tovar__bonus">до 620 бонусов<a href="#sticky" rel="modal:open">
                     <svg width="10" height="10">
                       <use xlink:href="img/sprite.svg#question-circle-solid"></use>
                     </svg></a></div>
@@ -181,7 +178,7 @@
               </div>
             </li>
           </ul>
-        </div><a href="#modal" rel="modal:open">Open Modal</a>
+        </div>
       </section>
     </main>
     <footer class="footer">

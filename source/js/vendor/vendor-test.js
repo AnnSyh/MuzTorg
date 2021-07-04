@@ -1,4 +1,4 @@
 export default  () => {
-  console.log(`vendor test`);
+  // console.log(`vendor test`);
 
 };
